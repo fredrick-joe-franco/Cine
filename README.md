@@ -1,22 +1,46 @@
-# Cine
+# Cine — streamscout front-end
 
-This repository contains the `streamscout` front-end project.
+This repository contains the streamscout front-end application (built with Vite + React). It provides a minimal UI for browsing and exploring streaming content.
 
-Quick actions:
+Repository layout
+- `streamscout/` — the Vite + React application source
 
-- Local repo initialization and initial commit were created by an assistant.
-- To create a GitHub repo and push, follow the instructions below.
+Prerequisites
+- Node.js (LTS) and npm
+- Git
 
-How to push to GitHub (recommended):
+Local development (quick)
+1. Install dependencies (installs `streamscout`'s deps):
 
-1. Create a remote repository on GitHub (via the website or `gh repo create`).
-2. Add the remote and push:
+   npm --prefix streamscout install
 
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
+2. Start the dev server:
 
-If you want the assistant to create the GitHub repo and push automatically, install and authenticate the GitHub CLI (`gh`) and re-run the push step.
+   npm --prefix streamscout run dev
 
-Notes:
-- If Git commit fails due to missing user.name/email, set them with `git config`.
-- Sensitive files are ignored if placed in `.env`.
+3. Open the URL shown by Vite (usually http://localhost:5173)
+
+Useful npm scripts (run from repo root)
+- Install deps: `npm --prefix streamscout install`
+- Dev server: `npm --prefix streamscout run dev`
+- Build: `npm --prefix streamscout run build`
+- Preview build: `npm --prefix streamscout run preview`
+
+Git / repository notes
+- A local git repository and initial commit have been created.
+- The repository has been pushed to `origin` on GitHub and `main` is tracking `origin/main`.
+
+Troubleshooting
+- If git complains about missing user.name/email:
+
+  git config user.name "Your Name"
+  git config user.email "you@example.com"
+
+- If npm fails, verify Node.js is installed and on your PATH.
+
+Optional next steps
+- Add a LICENSE (MIT/Apache)
+- Add CI (GitHub Actions) for linting/tests
+- Add CONTRIBUTING.md and ISSUE_TEMPLATE for open-source collaboration
+
+If you want, I can add any of the optional items above (CI, license, contributing). Tell me which and I'll implement it and push the changes.
